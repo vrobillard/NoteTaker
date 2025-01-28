@@ -1,0 +1,1070 @@
+/* --------------------------------------------------
+   Basic resets
+-------------------------------------------------- */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Questrial', sans-serif;
+  background-color: #F9FBFF;
+  height: 100%;
+  overflow: hidden;
+}
+
+#app-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-bottom: 3px #4A6FA5 solid;
+}
+
+/* --------------------------------------------------
+   Fixed Header
+-------------------------------------------------- */
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: #4A6FA5;
+  color: #FFFFFF;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+#app-title {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: transparent;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+#logo {
+  height: 1.5em;
+  margin-right: 10px;
+}
+
+/* Styling for the #current-time container */
+#current-time {
+  display: grid;
+  /* Utilize CSS Grid */
+  grid-template-columns: repeat(6, 1fr);
+  /* Define six equal-width columns */
+  grid-auto-rows: auto;
+  /* Automatic row height based on content */
+  gap: 8px 8px;
+  /* 10px row gap, 20px column gap */
+  font-size: 0.9rem;
+  color: #FFFFFF;
+  padding: 5px;
+  background-color: transparent;
+  /* Example background color for visibility */
+  box-sizing: border-box;
+  /* Include padding in width calculations */
+  z-index: 9999;
+}
+
+/* Remove default margins from span elements inside #current-time */
+#current-time span {
+  margin: 0;
+}
+
+/* General styling for labels */
+#current-time .label {
+  font-weight: bold;
+  text-align: right;
+  /* Align labels to the right */
+  padding-right: 0px;
+  /* Space between label and value */
+  white-space: nowrap;
+  /* Prevent labels from wrapping */
+}
+
+/* General styling for values */
+#current-time .value {
+  text-align: left;
+  /* Align values to the left */
+  padding-left: 5px;
+  /* Space between value and next label */
+}
+
+/* Specific positioning for the Date row */
+#current-time .label:nth-child(1) {
+  grid-column: 1 / 2;
+  /* First column */
+  grid-row: 1 / 2;
+  /* First row */
+}
+
+#current-time .value:nth-child(2) {
+  grid-column: 2 / 3;
+  /* Second column */
+  grid-row: 1 / 2;
+  /* First row */
+}
+
+/* Eastern Time */
+#current-time .label:nth-child(3) {
+  grid-column: 3 / 4;
+  /* Third column */
+  grid-row: 1 / 2;
+  /* First row */
+}
+
+#current-time .value:nth-child(4) {
+  grid-column: 4 / 5;
+  /* Fourth column */
+  grid-row: 1 / 2;
+  /* First row */
+}
+
+/* Mountain Time */
+#current-time .label:nth-child(5) {
+  grid-column: 5 / 6;
+  /* Fifth column */
+  grid-row: 1 / 2;
+  /* First row */
+}
+
+#current-time .value:nth-child(6) {
+  grid-column: 6 / 7;
+  /* Sixth column */
+  grid-row: 1 / 2;
+  /* First row */
+}
+
+/* Central Time */
+#current-time .label:nth-child(7) {
+  grid-column: 3 / 4;
+  /* Third column */
+  grid-row: 2 / 3;
+  /* Second row */
+}
+
+#current-time .value:nth-child(8) {
+  grid-column: 4 / 5;
+  /* Fourth column */
+  grid-row: 2 / 3;
+  /* Second row */
+}
+
+/* Pacific Time */
+#current-time .label:nth-child(9) {
+  grid-column: 5 / 6;
+  /* Fifth column */
+  grid-row: 2 / 3;
+  /* Second row */
+}
+
+#current-time .value:nth-child(10) {
+  grid-column: 6 / 7;
+  /* Sixth column */
+  grid-row: 2 / 3;
+  /* Second row */
+}
+
+/* Responsive Design: Adjust grid for smaller screens */
+@media (max-width: 1000px) {
+  #current-time {
+    display: none;
+  }
+
+  /* Adjust text alignment for small screens */
+  #current-time .label,
+  #current-time .value {
+    text-align: left;
+    /* Align everything to the left */
+    padding: 0;
+    /* Remove padding */
+  }
+}
+
+/* --------------------------------------------------
+   Content Section
+-------------------------------------------------- */
+#notes-section {
+  display: flex;
+  flex: 1;
+  margin-top: 68px;
+  /* Ensure it starts below the fixed header */
+  height: calc(100% - 50px);
+  /* Fill the space below the header */
+}
+
+/* Editor Section (Left) */
+#note-editor {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #F9FBFF;
+  border-right: 4px #4A6FA5 solid;
+  border-top: 3px #4A6FA5 solid;
+  padding: 0 16px 16px 16px;
+  box-sizing: border-box;
+  min-width: 0;
+  overflow: hidden;
+}
+
+#note-title {
+  width: 100%;
+  padding: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: 4px solid #555;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  outline-color: #4A6FA5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Panel header (common for all panels) */
+.panel-header {
+  margin: 0; /* Removes default margin */
+  font-size: 30px; /* Adjust font size as needed */
+  color: #343a40; /* Optional: Text color */
+}
+
+/* Add a hover effect */
+#note-title:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  animation: hover-bounce 0.4s ease-out;
+}
+
+#editor {
+  flex: 1;
+  background-color: #FFFFFF;
+  border: 4px solid #4A6FA5;
+  border-radius: 0 0 4px 4px;
+  padding: 10px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  font-family: 'Questrial', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Add a hover effect */
+#editor:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  animation: hover-bounce 0.4s ease-out;
+}
+
+/* --------------------------------------------------
+   Button Row
+-------------------------------------------------- */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.button-row-left,
+.button-row-right {
+  display: flex;
+  gap: 5px;
+}
+
+/* --------------------------------------------------
+   Right Side Panels Container
+-------------------------------------------------- */
+.panel-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0px 15px 0px;
+  background-color: #F9FBFF;
+  box-sizing: border-box;
+  height: 100%;
+  border-top: 3px #4A6FA5 solid;
+  min-width: 0;
+  position: relative;
+}
+
+/* Each panel inside the container */
+.panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.sticky-panel-header {
+  display: flex; /* Establishes Flexbox layout */
+  justify-content: space-between; /* Positions items at the ends */
+  align-items: center; /* Vertically centers items */
+  padding: 5px 5px 5px 15px; /* Optional: Adds padding */
+  background-color: #f8f9fa; /* Optional: Background color */
+  margin-bottom: 8px;
+}
+
+/* The "active" panel is shown */
+.panel.active {
+  display: flex;
+}
+
+/* For toggling .hidden quickly */
+.hidden {
+  display: none !important;
+}
+
+/* --------------------------------------------------
+   Panel Navigation Buttons
+-------------------------------------------------- */
+.panel-navigation {
+  background-color: #4A6FA5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 0;
+  border: 4px solid #4A6FA5;
+  
+  /* Added properties for sticky positioning */
+  position: sticky;
+  bottom: 0;
+  z-index: 10; /* Ensures it stays above other content */
+}
+
+.panel-navigation button {
+  background-color: #4A6FA5;
+  /* Primary color */
+  border: none;
+  color: #FFFFFF;
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  /* Circular buttons */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+/* Hover Effect */
+.panel-navigation button:hover {
+  background-color: #1A5276;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Active/Clicked State */
+.panel-navigation button:active {
+  background-color: #154360;
+  transform: scale(1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.panel-navigation button i {
+  pointer-events: none;
+  /* Ensure the entire button is clickable */
+  font-size: 1rem;
+}
+
+/* Disabled State (Optional) */
+.panel-navigation button:disabled {
+  background-color: #B0BEC5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.panel-navigation button:disabled i {
+  color: #ECEFF1;
+}
+
+/* --------------------------------------------------
+   Scrollbar styling
+-------------------------------------------------- */
+#note-editor,
+.panel-container {
+  scrollbar-width: thin;
+  scrollbar-color: #F9FBFF #FFFFFF;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+#note-editor:hover,
+.panel-container:hover {
+  scrollbar-color: #4A6FA5 #FFFFFF;
+}
+
+#note-editor::before,
+.panel-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  box-shadow: 0 0 10px rgba(11, 46, 83, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#note-editor:hover::before,
+.panel-container:hover::before {
+  opacity: 1;
+}
+
+/* --------------------------------------------------
+   Notes inside the "Saved Notes" panel
+-------------------------------------------------- */
+.note {
+  background-color: #FFFFFF;
+  border: 1px solid #555;
+  padding: 0;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 4px solid #4A6FA5;
+  position: relative;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.note:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  animation: hover-bounce 0.4s ease-out;
+}
+
+.note h3 {
+  margin: 0;
+  font-size: 2.2rem;
+  padding: 10px 5px 5px 10px;
+  color: #FFFFFF;
+  background-color: #4A6FA5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.note .note-content {
+  max-height: 200px;
+  min-height: 75px;
+  flex: 1;
+  overflow-y: scroll;
+  padding: 5px;
+  color: #555;
+}
+
+/* Save date row */
+.save-date {
+  padding: 0px 0px 10px 10px;
+  color: #FFFFFF !important;
+  background-color: #4A6FA5;
+  margin: 0px;
+  border-bottom: 2px solid #4A6FA5;
+}
+
+/* --------------------------------------------------
+   Buttons
+-------------------------------------------------- */
+button {
+  color: #ECF0F1;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  border: none;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 6px;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: auto;
+  max-width: 100%;
+}
+
+/* Hover bounce animation */
+@keyframes hover-bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  30% {
+    transform: translateY(-4px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Button variants */
+.primary-button {
+  background: #2C3E50;
+}
+
+.primary-button:hover {
+  background: #1A252F;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+}
+
+.primary-button:active {
+  background: #17202A;
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.primary-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(44, 62, 80, 0.5);
+}
+
+/* Delete button */
+.delete-button {
+  background: #C0392B;
+}
+
+.delete-button:hover {
+  background: #A93226;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+}
+
+.delete-button:active {
+  background: #922B21;
+}
+
+.delete-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(192, 57, 43, 0.5);
+}
+
+/* Save button */
+#save-note-button {
+  background: #1A5276;
+}
+
+#save-note-button:hover {
+  background: #154360;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+}
+
+#save-note-button:active {
+  background: #0E2F44;
+}
+
+#save-note-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(26, 82, 118, 0.5);
+}
+
+/* Edit button */
+.edit-button {
+  background: #27AE60;
+}
+
+.edit-button:hover {
+  background: #1E8449;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+}
+
+.edit-button:active {
+  background: #196F3D;
+}
+
+.edit-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(39, 174, 96, 0.5);
+}
+
+/* NoteTaker button */
+#note-taker-button {
+  background: #27AE60;
+}
+
+#note-taker-button:hover {
+  background: #1E8449;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+}
+
+#note-taker-button:active {
+  background: #196F3D;
+}
+
+#note-taker-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(39, 174, 96, 0.5);
+}
+
+/* Fullscreen button */
+.fullscreen-button {
+  background: #1A5276;
+}
+
+.fullscreen-button:hover {
+  background: #154360;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+}
+
+.fullscreen-button:active {
+  background: #1A5276;
+}
+
+.fullscreen-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(41, 129, 185, 0.5);
+}
+
+/* Cancel button */
+#cancel-edit-button {
+  background: #C0392B;
+}
+
+#cancel-edit-button:hover {
+  background: #A93226;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.25);
+}
+
+#cancel-edit-button:active {
+  background: #922B21;
+}
+
+#cancel-edit-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(192, 57, 43, 0.5);
+}
+
+/* --------------------------------------------------
+   Note-Taker Mode (Minimal Sticky-Note)
+-------------------------------------------------- */
+.note-taker-mode #notes-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.note-taker-mode .ql-toolbar {
+  border-radius: 0;
+  border: 4px solid #555555;
+  border-bottom: none;
+  background-color: #4A6FA5;
+}
+
+/* Hide top header and right panels in note-taker mode */
+.note-taker-mode #main-header,
+.note-taker-mode #notes-list {
+  display: none;
+}
+
+.note-taker-mode #note-editor {
+  position: relative;
+  flex: 1;
+  background: none;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+}
+
+.note-taker-mode #note-title {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 0;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.note-taker-mode #editor {
+  flex: 1;
+  height: 300px;
+  margin: 0;
+  border: none;
+}
+
+.note-taker-mode .button-row {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------------
+   Full-Screen Note
+-------------------------------------------------- */
+.note.full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0px;
+  background-color: #FFFFFF;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.note.full-screen h3 {
+  font-size: 2.2rem;
+  margin: 0;
+  color: #FFFFFF;
+  padding: 10px 5px 5px 10px;
+}
+
+.note.full-screen .save-date {
+  font-size: 1rem;
+  color: #000000;
+  padding: 0px 0px 10px 10px;
+  margin: 0px;
+}
+
+.note.full-screen .note-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  color: #555;
+  line-height: 1.6;
+  white-space: normal;
+  padding: 5px;
+  max-height: none;
+}
+
+.note.full-screen .button-row {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+/* --------------------------------------------------
+   Quill Toolbar
+-------------------------------------------------- */
+.ql-toolbar {
+  border-radius: 5px 5px 0 0;
+  border: 4px solid #555555;
+  border-bottom: none;
+  background-color: #4A6FA5;
+}
+
+.ql-toolbar .ql-picker-label svg .ql-stroke,
+.ql-toolbar .ql-italic svg .ql-stroke,
+.ql-toolbar .ql-bold svg .ql-stroke,
+.ql-toolbar .ql-list svg .ql-stroke,
+.ql-toolbar .ql-link svg .ql-stroke,
+.ql-toolbar .ql-image svg .ql-stroke,
+.ql-stroke.ql-thin,
+.ql-toolbar .ql-underline svg .ql-stroke {
+  stroke: #4A6FA5 !important;
+}
+
+.ql-toolbar .ql-formats button {
+  margin: 5px;
+  background-color: #FFFFFF !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.ql-toolbar .ql-formats button:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  animation: hover-bounce 0.4s ease-out;
+}
+
+.ql-toolbar .ql-formats button.ql-active {
+  background-color: #4A6FA5 !important;
+}
+
+/* Force icon stroke to white when button is active */
+.ql-toolbar .ql-formats button.ql-active svg .ql-stroke {
+  stroke: #FFFFFF !important;
+}
+
+.ql-picker-item {
+  color: #4A6FA5;
+}
+
+.ql-snow .ql-fill {
+  fill: #4A6FA5;
+  width: 50px;
+}
+
+.ql-snow.ql-toolbar .ql-picker-label.ql-active {
+  color: #FFFFFF;
+}
+
+.ql-picker-label {
+  color: #FFFFFF;
+}
+
+.ql-snow .ql-formats button.ql-active svg .ql-fill {
+  fill: #FFFFFF !important;
+}
+
+/* --------------------------------------------------
+   Search input styling
+-------------------------------------------------- */
+.notes-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  padding: 10px 0px;
+  background-color: #F9FBFF;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  margin-top: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#note-search,
+#directory-search,
+#resort-search {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #555;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline-color: #4A6FA5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  max-height: 35px;
+  max-width: 60% !important;
+  margin: 5px 38px 5px 5px;
+}
+
+
+#note-search:hover,
+#directory-search:hover,
+#resort-search:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  animation: hover-bounce 0.4s ease-out;
+}
+
+/* Responsive Image Styling */
+.note .note-content img {
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  margin: 10px 0;
+}
+
+.ql-toolbar.ql-snow {
+  border: 0px solid #ccc;
+}
+
+/* Search Bar Styles */
+.search-bar {
+  margin-bottom: 20px;
+}
+
+/* Directory Panel Styles */
+
+#notes-container,
+#directory-container,
+#resort-container {
+  position: relative;
+  flex: 1;
+  margin: 0 14px 0 14px;
+  padding-right: 12px;
+  overflow-y: auto;
+}
+
+
+/* Sticky table header */
+#directory-table thead tr,
+#resort-table thead tr {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  /* Stays above table body rows */
+  background-color: #4A6FA5;
+  /* Same color as your header? Or something contrasting */
+}
+
+
+/* Updated Table Styling */
+#directory-table,
+#resort-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 0px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  /* Overall Table Border */
+  border: 4px solid #4a6fa5;
+  /* 4px solid border */
+
+  /* Rounded Corners */
+  border-radius: 8px;
+}
+
+/* Table Header Styling */
+#directory-table th,
+#resort-table th {
+  background-color: #4a6fa5;
+  color: #ffffff;
+  text-align: left;
+  padding: 12px;
+  font-weight: bold;
+  border-bottom: 0px solid #ddd;
+}
+
+/* Table Data Styling */
+#directory-table td,
+#resort-table td {
+  border: 0px solid #ddd;
+  padding: 12px;
+  vertical-align: top;
+  color: #333;
+}
+
+/* Striped Rows */
+#directory-table tr:nth-child(odd),
+#resort-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+#directory-table tr:nth-child(even),
+#resort-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover Effect */
+#directory-table tr:hover,
+#resort-table tr:hover {
+  background-color: #d8e4f0;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Remove Thick Borders from Cells */
+#directory-table th:first-child,
+#directory-table td:first-child,
+#directory-table th:last-child,
+#directory-table td:last-child,
+#resort-table th:first-child,
+#resort-table td:first-child,
+#resort-table th:last-child,
+#resort-table td:last-child {
+  border-left: none;
+  border-right: none;
+}
+
+/* Rounded Corners for Last Row Cells */
+#directory-table tr:last-child td:first-child,
+#resort-table tr:last-child td:first-child {
+  border-bottom-left-radius: 8px;
+}
+
+#directory-table tr:last-child td:last-child,
+#resort-table tr:last-child td:last-child {
+  border-bottom-right-radius: 8px;
+}
+
+/* Responsive Design: Adjust for Smaller Screens */
+@media (max-width: 768px) {
+
+  #directory-table,
+  #resort-table {
+    font-size: 0.9rem;
+  }
+
+  #directory-table th,
+  #directory-table td,
+  #resort-table th,
+  #resort-table td {
+    padding: 8px;
+  }
+}
+
+/* Contact Sub-Fields */
+.phone-line,
+.website-line,
+.email-line,
+.info-line,
+.hours-line,
+.contracts-line {
+  margin-bottom: 4px;
+  font-size: 0.9rem;
+}
+
+.phone-line strong,
+.website-line strong,
+.email-line strong,
+.info-line strong,
+.hours-line strong,
+.contracts-line strong {
+  margin-right: 4px;
+}
+
+.dir-name {
+  width: 15%;
+}
+
+.dir-contact {
+  width: 45%;
+}
+
+.extra-space {
+  padding: 1000px 0;
+  /* or padding, min-height, etc. */
+}

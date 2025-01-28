@@ -1,0 +1,601 @@
+[
+  {
+    "name": "Amstar",
+    "contact": {
+      "phones": {
+        "us/canada": "1-800-895-3000",
+        "rest of the world": "+52-998-881-9500"
+      },
+      "website": {
+        "url": "https://www.amstardmc.com/"
+      },
+      "info": "For booking within 48h - Must call by phone to get 15% Discount"
+    }
+  },
+  {
+    "name": "Boyaje",
+    "contact": {
+      "phones": {
+        "Mexico": "52-998-214-0316"
+      },
+      "website": {
+        "url": "https://www.boyaje.com/"
+      },
+      "info": "Yacht Rental"
+    }
+  },
+  {
+    "name": "Colonial",
+    "contact": {
+      "phones": {
+        "dominican republic 1": "809-688-5285",
+        "dominican republic 2": "809-796-7995"
+    },
+    "website": {
+      "url": "https://www.colonialtours.com/"
+    },
+    "info": "Transportation in DR for USP Only"
+    }
+  },
+  {
+    "name": "FunJet Charter Flights",
+    "contact": {
+      "phones": {
+        "us/canada": "1-833-968-3592"
+      },
+      "website": {
+        "url": "https://www.funjet.com/uvc/"
+      },
+      "email": "uflyusave@unlimitedvc.com",
+      "info": "Charter Flights"
+    }
+  },
+  {
+    "name": "FlyBack",
+    "contact": {
+      "phones": {
+        "us/canada": "1-855-221-5828",
+        "mexico": "800-841-7317",
+        "rest of the world": "+52-984-206-5390"
+      },
+      "website": {
+        "url": "https://flyback.mx/"
+      },
+      "info": "Fly Back Certificate Activation and Refund"
+    }
+  },
+  {
+    "name": "SEJA Financing",
+    "contact": {
+      "phones": {
+        "us/canada": "1-866-207-4925",
+        "Mexico": "800-839-2018",
+        "Other Countries": "+52 984 206 5330"
+      },
+      "info": "For GUSA Payments"
+    }
+  },
+  {
+    "name": "MTG (USP only)",
+    "contact": {
+      "phones": {
+        "Local Expert (Cancun)": "52-998-312-1211",
+        "Gray Line (Los Cabos)": "52-624-146-9410",
+        "Gray Line (Vallarta)": "52-322-225-1190"
+      }
+    }
+  },
+  {
+    "name": "RCI",
+    "contact": {
+      "phones": {
+        "us/canada": "1-800-338-7777",
+        "mexico": "800-724-2661"
+      },
+      "info": "RCI Exchanges",
+      "website": {
+        "url": "https://www.rci.com/",
+        "username": "AMREng01",
+        "password": "123456"
+      }
+    }
+  },
+  {
+    "name": "Registry Collection",
+    "contact": {
+      "phones": {
+        "us/canada": "1-800-548-2300"
+      },
+      "info": "Registry Collection Exchanges",
+      "website": "https://www.theregistrycollection.com/"
+    }
+  },
+  {
+    "name": "UVC with Lifestyle Collection",
+    "contact": {
+      "phones": {
+        "us/canada": "1-855-437-0592"
+      },
+      "info": "UVC Lifestyle Collection Exchanges"
+    }
+  },
+  {
+    "name": "ULifestyle Collection",
+    "contact": {
+      "phones": {
+        "us/canada": "1-844-938-1344"
+      },
+      "info": "ULifestyle Collection Exchanges",
+      "website": {
+        "url": "https://ulifestylecollection.com/",
+        "username": "ChoicesDemo / GoldDemo / ImpressionBlackDemo",
+        "password": "password"
+      }
+    }
+  },
+  {
+    "name": "Vacation Guard Claims",
+    "contact": {
+      "phones": {
+        "main": "1-877-401-6522"
+      },
+      "info": "Claims Only"
+    }
+  },
+  {
+    "name": "Vacation Guard General",
+    "contact": {
+      "phones": {
+        "main": "1-866-314-9480"
+      },
+      "info": "General Questions"
+    }
+  },
+  {
+    "name": "VCM Financing",
+    "contact": {
+      "phones": {
+        "US/Canada": "1-866-993-3727",
+        "Mexico": "800-681-9242"
+      },
+      "info": "For VCM Payments"
+    }
+  },
+  {
+    "name": "UVC Pre-Welcome Call Contact",
+    "contact": {
+      "phones": {
+        "USA": "1-855-203-6986",
+        "Canada": "1-855-223-2810",
+        "Mexico": "01-800-400-0220",
+        "Other Countries": "011-52 998 881 0000",
+        "EXT Guadalupe Varela": "1141",
+        "EXT Patricia Castro": "1109",
+        "EXT Fernando Núñez": "1116",
+        "EXT Ramón Camino": "1170"
+      },
+      "info": "For Pre-Welcome Call with UVC for Members financed through VCM or SEJA"
+    }
+  },
+  {
+    "name": "Value Traders",
+    "contact": {
+      "phones": {
+        "main": "1-866-209-6787"
+      },
+      "info": "Trade-In Inquiries"
+    }
+  },
+  {
+    "name": "Sun Trade Ins",
+    "contact": {
+      "phones": {
+        "main": "1-866-359-5139"
+      },
+      "info": "Trade-In Inquiries"
+    }
+  },
+  {
+    "name": "U Experiences by One",
+    "contact": {
+      "phones": {
+        "USA": "1-888-494-1125",
+        "Mexico": "+52 80-0872-1138",
+        "Impression/Impression Black USA": "1-888-9261155"
+      },
+      "info": "U Experiences"
+    }
+  },
+  {
+    "name": "World of Hyatt",
+    "contact": {
+      "phones": {
+        "US/Canada": "1-800-233-1234",
+        "Mexico": "800-005-0000"
+      },
+      "website": {
+        "url": "https://www.hyatt.com/",
+        "username": "vrobillard@globalbureau.com",
+        "password": "Gbs0123456789!"
+      },
+      "info": "WOH Inquiries"
+    }
+  },
+  {
+    "name": "UVC VIP",
+    "contact": {
+      "phones": {
+        "US/Canada": "1-844-797-7297",
+        "Mexico": "800 880 0740"
+      },
+      "contracts": "UVC Platinum, Diamond, Impression and Impression Black",
+      "hours": "Mon-Sun 8AM-9PM",
+      "genesysContact": "UVC Agent Assist Internal Transfer (Option 4 for VIP)"
+    }
+  },
+  {
+    "name": "UVC - Unlimited Vacation Club",
+    "contact": {
+      "phones": {
+        "US/Canada": "1-877-923-2582",
+        "Mexico": "800-099-6435",
+        "Argentina": "0800-666-3458",
+        "Chile": "1230-020-6848",
+        "Dominican Republic": "1-829-200-9898",
+        "Costa Rica": "506-4000-0226",
+        "Brazil": "0-800-724-8589",
+        "France": "08-05-08-00-21",
+        "United Kingdom": "0-808-189-1401",
+        "Rest of the World": "786-999-0179"
+      },
+      "website": {
+        "url": "https://www.unlimitedvacationclub.com/",
+        "username": "demogbsmia / demogbssan / demogbssto / demogbsmex",
+        "password": "UVC123456!"
+      },
+      "email": "memberservices@unlimitedvacationclub.com",
+      "contracts": "Contracts for Impression by Secrets, Zoetry, Secrets, Breathless, Dreams, Alua, Sunscape, Reflect, Now + UGs and UREFs)",
+      "hours": "Mon-Sun 8AM-9PM",
+      "genesysContact": "UVC Internal Transfer"
+    }
+  },
+  {
+    "name": "RC4",
+    "contact": {
+      "phones": {
+        "US/Canada": "1-844-842-4527",
+        "Mexico": "800-099-6435",
+        "Brazil": "0-800-891-5369"
+      },
+      "email": "allinclusivepre-payment@globalbureau.com",
+      "contracts": "RC4",
+      "hours":"Mon-Fri 9AM-6PM",
+      "genesysContact": "UVC Internal Transfer (Option 4)"
+    }
+  },
+  {
+    "name": "Vivenzia",
+    "contact": {
+      "phones": {
+        "US/Canada": "1-877-336-7232",
+        "Mexico": "800-681-9568"
+      },
+      "website": {
+        "url": "https://www.vivenziavacationclub.com/"
+      },
+      "email": "MemberServices@VivenziaVacationClub.com",
+      "info": "GC / GD / GE / GH / GL / GM / GP / GQ / GV / GZ / VR / WB / WJ / WO / WQ",
+      "hours": "Mon-Sat 9AM-9PM",
+      "genesysContact": "Vivenzia Internal Transfer"
+    }
+  },
+  {
+    "name": "Casa Dorada",
+    "contact": {
+      "phones": {
+        "us/canada 1": "1-877-436-7232",
+        "us/canada 2": "1-877-636-7232",
+        "us/canada 3": "1-800-405-0655"
+      },
+      "website": {
+        "url": "https://www.gbsinternationalinc.com/"
+      },
+      "email": "CasaDorada@GlobalBureau.com",
+      "contracts": "CD / MB / CH / CB",
+      "hours": "Mon-Fri 9AM-9PM",
+      "genesysContact": "Casa Dorada Internal Transfer"
+    }
+  },
+  {
+    "name": "Las Residencias",
+    "contact": {
+      "phones": {
+        "US/Canada #1": "1-866-405-1888",
+        "US/Canada #2": "1-855-695-6494",
+        "Mexico": "800-681-6964"
+      },
+      "website": {
+        "url": "https://www.gbsinternationalinc.com/"
+      },
+      "email": "LasResidencias@GlobalBureau.com",
+      "contracts": "RE / RS / AQ",
+      "hours": "Mon-Fri 9AM-9PM",
+      "genesysContact": "Las Residencias Internal Transfer"
+    }
+  },
+  {
+    "name": "LVC+ - Latitude Vacation Plus",
+    "contact": {
+      "phones": {
+        "US/Canada": "1-855-827-5877",
+        "Dominican Republic": "829-947-6544"
+      },
+      "website": {
+        "url": "https://www.latitudevacationclub.com/"
+      },
+      "email": "MemberServices@LatitudeVacationClub.com",
+      "contracts": "LA / L15",
+      "hours": "Mon-Fri 9AM-9PM",
+      "genesysContact": "Latitude Vacation Club Internal Transfer"
+    }
+  },
+  {
+    "name": "Hyatt Ziva Timeshare (NOT World of Hyatt!)",
+    "contact": {
+      "phones": {
+        "US/Canada #1": "1-800-405-8955",
+        "US/Canada #2": "1-866-699-8224",
+        "US/Canada #3": "1-877-892-7368",
+        "Mexico": "800-228-8102"
+      },
+      "website": {
+        "url": "https://www.gbsinternationalinc.com/"
+      },
+      "email": "hyattloscabos@globalbureau.com",
+      "contracts": "GB",
+      "hours": "Mon-Fri 9AM-6PM",
+      "genesysContact": "Hyatt Ziva Internal Transfer"
+    }
+  },
+  {
+    "name": "Regency Timeshare",
+    "contact": {
+      "phones": {
+        "Customer Service": "1-800-405-8955",
+        "Regency Hotel": "011-52-998-287-5914"
+      },
+      "email": "regency@globalbureau.com",
+      "contracts": "RG1",
+      "hours": "Mon-Fri 9AM-6PM",
+      "genesysContact": "Regency Internal Transfer"
+    }
+  },
+  {
+    "name": "Executive Services (ESA)",
+    "contact": {
+      "phones": {
+        "US/Canada #1": "1-877-861-4228",
+        "Mexico #1": "800-880-0864",
+        "Mexico #2": "800-266-6456",
+        "Mexico Local": "998-980-0620"
+      },
+      "contracts": "BRP, SBP, U10A, U10B, U12A, U12B, U12C, UCC, UV1, UV10, UV11, UV12, UV1A, UV1B, UV2, UV2A, UV2B, UV5, UV5R, UV6, UV7, UV7A, UV7B, UV8, UV9, UVR0, UVR1, UVR2, UVR3, UVR4, UVR5, UVR6, UVR7, UVR8, UVR9",
+      "hours": "Mon-Sat 9AM-9PM / Sun 9AM-6PM",
+      "genesysContact": "Executive Services Internal Transfer"
+    }
+  },
+  {
+    "name": "Globequest RGN",
+    "contact": {
+      "phones": {
+        "US/Canada": "844-767-8389",
+        "Mexico": "800-099-0661"
+      },
+      "contracts": "BG5, CDC, CDMR, GPE, GPM, GQ6, GQ7, GQ8, GQD, GQF, GQG, GQL, GQT, GQV, GQT, GQV, GQW, GTL, HE5, MB5, MEC, NCD, NCH, NGM, NGQ, NHE, NMB, QCD, QCH, QGM, QGQ, QHE, QMB",
+      "hours": "Mon-Sat 9AM-9PM / Sun 9AM-6PM",
+      "genesysContact": "Globequest RGN Internal Transfer"
+    }
+  },
+  {
+    "name": "Worldquest RGN",
+    "contact": {
+      "phones": {
+        "US/Canada": "844-694-7832",
+        "Mexico": "800-099-0664"
+      },
+      "contracts": "WBP, WCR, WQB, WTL, NWQ, QWQ, WQA, WQF, WQV, WSC",
+      "hours": "Mon-Sat 9AM-9PM / Sun 9AM-6PM",
+      "genesysContact": "Worldquest RGN Internal Transfer"
+    }
+  },
+  {
+    "name": "XE.com",
+    "contact": {
+      "info": "Currency Exchange Rate",
+      "website": {
+        "url": "https://www.xe.com/"
+      }
+    }
+  },
+  {
+    "name": "How to Call Abroad",
+    "contact": {
+      "info": "Country Codes and International Call Formats",
+      "website": {
+        "url": "https://www.howtocallabroad.com/"
+      }
+    }
+  },
+  {
+    "name": "Google Flights",
+    "contact": {
+      "info": "Airline Tickets and Flights",
+      "website": {
+        "url": "https://www.google.com/travel/flights"
+      }
+    }
+  },
+  {
+    "name": "Flight Aware",
+    "contact": {
+      "info": "Flight Verification",
+      "website": {
+        "url": "https://www.flightaware.com/"
+      }
+    }
+  },
+  {
+    "name": "Hyatt Inclusive Collection (HIC) Official Websites",
+    "contact": {
+      "info": "Official websites for Hyatt Inclusive Collection (HIC) Resorts",
+      "websites": [
+        {
+          "name": "HIC Media Site",
+          "url": "https://vault.appleleisuregroup.com/portals/ilv4en79/hyattinclusivecollectionMediaSiteHomepage",
+          "displayText": "CLICK HERE"
+        },
+        {
+          "name": "Impression by Secrets",
+          "url": "https://www.hyattinclusivecollection.com/en/resorts-hotels/impression-by-secrets",
+          "displayText": "CLICK HERE"
+        },
+        {
+          "name": "Hyatt Ziva",
+          "url": "https://www.hyattinclusivecollection.com/en/resorts-hotels/hyatt-ziva",
+          "displayText": "CLICK HERE"
+        },
+        {
+          "name": "Hyatt Zilara",
+          "url": "https://www.hyattinclusivecollection.com/en/resorts-hotels/hyatt-zilara",
+          "displayText": "CLICK HERE"
+        },
+        {
+          "name": "Zoetry Wellness & Spa Resorts",
+          "url": "https://www.hyattinclusivecollection.com/en/resorts-hotels/zoetry",
+          "displayText": "CLICK HERE"
+        },
+        {
+          "name": "Secrets Resorts & Spa",
+          "url": "https://www.hyattinclusivecollection.com/en/resorts-hotels/secrets",
+          "displayText": "CLICK HERE"
+        },
+        {
+          "name": "Breathless Resorts & Spa",
+          "url": "https://www.hyattinclusivecollection.com/en/resorts-hotels/breathless",
+          "displayText": "CLICK HERE"
+        },
+        {
+          "name": "Dreams Resorts & Spa",
+          "url": "https://www.hyattinclusivecollection.com/en/resorts-hotels/dreams",
+          "displayText": "CLICK HERE"
+        },
+        {
+          "name": "Hyatt Vivid Hotels & Resorts",
+          "url": "https://www.hyattinclusivecollection.com/en/resorts-hotels/hyatt-vivid",
+          "displayText": "CLICK HERE"
+        },
+        {
+          "name": "Alua Hotels & Resorts",
+          "url": "https://www.hyattinclusivecollection.com/en/resorts-hotels/alua-hotels",
+          "displayText": "CLICK HERE"
+        },
+        {
+          "name": "Sunscape Resorts & Spa",
+          "url": "https://www.hyattinclusivecollection.com/en/resorts-hotels/sunscape",
+          "displayText": "CLICK HERE"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Price Match Websites",
+    "contact": {
+      "info": "Authorized Websites for Price Match. Other Authorized Price Match Website are: Travel Impressions / Alaska Vacations, American Airline Vacations, Classic Vacations, Delta Vacations, Flight Centre, GOGO Worldwide Vacations, Jetblue Getaway Vacations, Liberty Travel, Mexico Unlimited, Pleasant Holidays, Spirit Airline Vacations, US Airway Vacations, Vacation Express",
+      "websites": [
+        {
+          "name": "Expedia",
+          "url": "https://www.expedia.com/",
+          "displayText": "https://www.expedia.com/"
+        },
+        {
+          "name": "Booking",
+          "url": "https://www.booking.com/",
+          "displayText": "https://www.booking.com/"
+        },
+        {
+          "name": "Cheap Caribbean",
+          "url": "https://www.cheapcaribbean.com/",
+          "displayText": "https://www.cheapcaribbean.com/"
+        },
+        {
+          "name": "Apple Vacations",
+          "url": "https://www.applevacations.com/",
+          "displayText": "https://www.applevacations.com/"
+        },
+        {
+          "name": "Hotels.com",
+          "url": "https://www.hotels.com/",
+          "displayText": "https://www.hotels.com/"
+        },
+        {
+          "name": "Priceline",
+          "url": "https://www.priceline.com/",
+          "displayText": "https://www.priceline.com/"
+        },
+        {
+          "name": "Travelocity",
+          "url": "https://www.travelocity.com/",
+          "displayText": "https://www.travelocity.com/"
+        },
+        {
+          "name": "Orbitz",
+          "url": "https://www.orbitz.com/",
+          "displayText": "https://www.orbitz.com/"
+        },
+        {
+          "name": "FunJet",
+          "url": "https://www.funjet.com/",
+          "displayText": "https://www.funjet.com/"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Canadian Price Match Websites",
+    "contact": {
+      "info": "Authorized Websites for Price Match for Canadia Members. Other Authorized Price Match Website for Canadian Members are: Signature Vacations, Thomas Cook Vacations, Holiday House, Air Canada Vacations, Vacance Air Transat",
+      "websites": [
+        {
+          "name": "Sunwing",
+          "url": "https://www.sunwing.ca/en/",
+          "displayText": "https://www.sunwing.ca/en/"
+        },
+        {
+          "name": "Expedia.ca",
+          "url": "https://www.expedia.ca/",
+          "displayText": "https://www.expedia.ca/"
+        },
+        {
+          "name": "Sunquest",
+          "url": "https://www.sunquest.ca/",
+          "displayText": "https://www.sunquest.ca/"
+        },
+        {
+          "name": "West Jet",
+          "url": "https://www.westjet.com/es-us",
+          "displayText": "https://www.westjet.com/es-us"
+        },
+        {
+          "name": "Red Tag",
+          "url": "https://www.redtag.ca/",
+          "displayText": "https://www.redtag.ca/"
+        },
+        {
+          "name": "Booking (CAD)",
+          "url": "https://www.booking.com/?selected_currency=CAD",
+          "displayText": "https://www.booking.com/?selected_currency=CAD"
+        }
+      ]
+    }
+  }
+]
